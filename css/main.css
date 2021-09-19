@@ -1,30 +1,205 @@
-.site-header
-{
-    background-color: #a1dae0;
-    color: black;
-    height: 100vh;
-    font-family: monospace;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.navbar-brand {
+  padding-left: 25px !important;
 }
-.profile-pic
-{
-    border-radius: 50%;
-    height: 180px;
-    width: 180px;
-    box-shadow: 3px 4px 6px 2px #546fde;
+
+.navbar {
+  background-color: rgb(41, 223, 255) !important;
 }
-.site-header-content
-{
-    margin: 15px
+.navbar-brand {
+  color: rgb(84, 102, 207) !important;
 }
-.course-link
-{
-    color: black;
+.container {
+  padding: 0% !important;
 }
-body
-{
-margin: 0;
+
+.border-none {
+  border: none !important;
+}
+.site-header {
+  background-color: rgb(183, 244, 255);
+  color: black;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-left: 150px;
+  width: 70%;
+}
+.project-page {
+  background-color: rgb(235, 235, 235);
+  height: 100vh;
+}
+.about-page {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+.site-header-content {
+  height: fit-content;
+}
+.site-header-content h1 {
+  font-size: 25;
+}
+.span-name {
+  font-size: 35 !important;
+  font-weight: 600 !important;
+}
+.course-link {
+  color: black;
+  font-style: italic;
+}
+body {
+  margin: 0;
+}
+.social-links {
+  position: relative;
+  display: flex;
+  border-width: 2px;
+  max-height: fit-content;
+  padding: 1rem;
+  justify-content: center;
+  color: #f4f4f4;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #263238;
+  color: #f4f4f4;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  padding: 1rem;
+}
+.icon-adjust {
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  color: beige;
+  font-size: x-large;
+}
+/* .pageTwo {
+  height: 100vh;
+} */
+.pageHead h2 {
+  color: rgb(17, 180, 255);
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-p {
+  color: rgb(68, 68, 68);
+  font-size: large;
+  padding: 20px;
+  text-align: justify;
+  padding-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+section {
+  height: 100vh;
+  border-bottom: 1px solid rgb(107, 233, 255);
+}
+.project-space {
+  height: 300px;
+  background-color: cornflowerblue;
+  transition: ease-out 500ms;
+  display: flex;
+}
+.project-card {
+  display: flex;
+  width: 180px;
+  height: 220px;
+  background-color: rgb(255, 255, 255);
+  margin: 40px;
+  margin-right: 0;
+  border-radius: 3px;
+  transition: 500ms;
+  text-align: center;
+}
+.project-card-new {
+  display: flex;
+  width: 180px;
+  height: 235px;
+  background-color: rgb(255, 255, 255);
+  margin: 40px;
+  margin-right: 0;
+  border-radius: 3px;
+  transition: 500ms;
+  text-align: center;
+}
+.project-card-link h4 {
+  text-align: center !important;
+  font-size: small;
+  width: 180px;
+  height: 20px;
+  padding: 20px;
+  color: #252c30 !important;
+}
+.project-card-link img {
+  height: 20px;
+  width: 20px;
+  align-items: center;
+}
+.project-card:hover {
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 0.3rem 1.4rem 0 rgb(161, 241, 253);
+  /* transform: translate(-0.2rem); */
+}
+.project-card-detail-body {
+  max-height: 50vh;
+}
+
+/* Scrollbar */
+
+.scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.scroll::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* Project card buttons */
+
+.project-card-btn {
+  width: 180px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-card-btn button {
+  height: fit-content;
+  justify-content: center;
+  font-size: small;
+  margin: 10px;
+  border-radius: 15px;
+  border: 0.1px solid greenyellow;
+  background-color: #fff;
+  height: 25px;
+}
+
+.project-card-btn button:hover {
+  cursor: pointer;
+  background-color: rgb(168, 223, 80);
+  color: #fff;
+  box-shadow: 0.2rem 0.3rem 1rem rgb(168, 223, 80);
+  margin-bottom: 15px;
+  transition: ease-in 300ms;
+  border: 0.1px solid rgb(116, 116, 116);
+}
+
+.project-card-details {
+  width: 170px;
+  text-align: justify;
+  height: 107px;
+  font-size: 12;
+  align-content: center;
+  padding: 10px;
+  margin: 5px;
+  border: 0.1px solid greenyellow;
 }
