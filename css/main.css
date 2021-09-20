@@ -269,7 +269,7 @@ section {
   }
   .nav-menu {
     position: fixed;
-    left: -110%;
+    left: -100%;
     top: 2.5rem;
     flex-direction: column;
     background-color: #fff;
@@ -283,7 +283,7 @@ section {
     padding: 0.4rem 1.4rem;
   }
   .nav-menu.active {
-    left: -10%;
+    left: 0;
   }
 
   .nav-item {
