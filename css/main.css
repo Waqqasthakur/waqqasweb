@@ -1,3 +1,7 @@
+:root {
+  font-size: 20px;
+}
+
 .navbar-brand {
   padding-left: 25px !important;
 }
@@ -39,10 +43,10 @@
   height: fit-content;
 }
 .site-header-content h1 {
-  font-size: 25;
+  font-size: 1.2rem;
 }
 .span-name {
-  font-size: 35 !important;
+  font-size: 2rem !important;
   font-weight: 600 !important;
 }
 .course-link {
@@ -202,4 +206,20 @@ section {
   padding: 10px;
   margin: 5px;
   border: 0.1px solid greenyellow;
+}
+@media screen and (max-width: 740px) {
+  :root {
+    font-size: 15px;
+  }
+  .site-header {
+    padding-left: 100px;
+  }
+}
+@media screen and (max-width: 630px) {
+  :root {
+    font-size: 10px;
+  }
+  .site-header {
+    padding-left: 80px;
+  }
 }
