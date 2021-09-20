@@ -222,4 +222,8 @@ section {
   .site-header {
     padding-left: 80px;
   }
+  .navbar {
+    background-color: rgb(41, 223, 255) !important;
+    height: 50px;
+  }
 }
