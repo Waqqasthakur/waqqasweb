@@ -293,6 +293,10 @@ section {
     display: block;
     cursor: pointer;
   }
+  .about-p {
+    padding-left: 20px;
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 630px) {
   :root {
@@ -301,8 +305,29 @@ section {
   .site-header {
     padding-left: 80px;
   }
+  .about-p {
+    padding-left: 20px;
+    padding: 20px;
+  }
 
   /* .nav-menu {
     top: 2.8rem;
   } */
+}
+@media screen and (max-width: 360px) {
+  .nav-menu {
+    display: flex;
+    position: fixed;
+    left: -111%;
+    top: 2.5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    /* border-radius: 10px; */
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-menu.active {
+    left: -10%;
+  }
 }
