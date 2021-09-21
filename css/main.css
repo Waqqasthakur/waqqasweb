@@ -14,7 +14,9 @@ a {
 
 /* Nav bar */
 .header {
-  border-bottom: 1px solid #e2e8f0;
+  /* position: fixed; */
+  /* border-bottom: 1px solid #e2e8f0; */
+  background-color: rgb(73, 73, 73);
   font-family: "Roboto", sans-serif;
   width: 100%;
 }
@@ -37,7 +39,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #363636;
+  background-color: rgb(17, 180, 255);
 }
 
 .nav-menu {
@@ -53,7 +55,7 @@ a {
 .nav-link {
   font-size: 1rem;
   font-weight: 400;
-  color: #475569;
+  color: #d8d8d8;
 }
 
 .nav-link:hover {
@@ -70,8 +72,7 @@ a {
   background-color: rgb(183, 244, 255);
   color: black;
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   padding-top: 150px;
@@ -79,8 +80,8 @@ a {
   /* width: 70%; */
 }
 .project-page {
-  background-color: rgb(235, 235, 235);
-  height: 100vh;
+  background-color: rgb(73, 73, 73);
+  height: 110vh;
 }
 .about-page {
   background-color: rgb(255, 255, 255);
@@ -103,6 +104,21 @@ a {
 body {
   margin: 0;
 }
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #263238;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+}
+.footer p {
+  padding: 1rem;
+  color: #f4f4f4;
+}
 .social-links {
   position: relative;
   display: flex;
@@ -112,23 +128,16 @@ body {
   justify-content: center;
   color: #f4f4f4;
 }
-.footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #263238;
-  color: #f4f4f4;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  padding: 1rem;
-}
 .icon-adjust {
   padding-left: 0.9rem;
   padding-right: 0.9rem;
   color: beige;
   font-size: x-large;
+  transition: ease-in 150ms;
+}
+.icon-adjust:hover {
+  color: rgb(17, 180, 255);
+  transition: ease-in 150ms;
 }
 /* .pageTwo {
   height: 100vh;
@@ -155,8 +164,8 @@ section {
   height: 100vh;
 }
 .project-space {
-  height: 300px;
-  background-color: cornflowerblue;
+  height: 320px;
+  background-color: rgb(73, 73, 73);
   transition: ease-out 500ms;
   display: flex;
 }
@@ -164,7 +173,7 @@ section {
   display: flex;
   width: 180px;
   height: 220px;
-  background-color: rgb(255, 255, 255);
+  background-color: beige;
   margin: 40px;
   margin-right: 0;
   border-radius: 3px;
@@ -175,12 +184,14 @@ section {
   display: flex;
   width: 180px;
   height: 235px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(26, 26, 26);
   margin: 40px;
   margin-right: 0;
   border-radius: 3px;
   transition: 500ms;
   text-align: center;
+  box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.5),
+    0 6px 6px rgba(250, 250, 250, 0.5);
 }
 .project-card-link h4 {
   text-align: center !important;
@@ -189,7 +200,7 @@ section {
   width: 180px;
   height: 15px;
   padding: 0;
-  color: #252c30 !important;
+  color: beige !important;
 }
 .project-card-link img {
   height: 20px;
@@ -241,9 +252,9 @@ section {
 
 .project-card-btn button:hover {
   cursor: pointer;
-  background-color: rgb(168, 223, 80);
-  color: #fff;
-  box-shadow: 0.2rem 0.3rem 1rem rgb(168, 223, 80);
+  background-color: rgb(26, 26, 26);
+  color: beige;
+  box-shadow: 0.1rem 0.1rem 0.3rem beige;
   margin-bottom: 15px;
   transition: ease-in 300ms;
   border: 0.1px solid rgb(116, 116, 116);
@@ -260,6 +271,7 @@ section {
   border: 0.1px solid rgb(161, 221, 71);
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
+  color: beige;
 }
 @media screen and (max-width: 768px) {
   :root {
@@ -271,10 +283,10 @@ section {
   .nav-menu {
     display: flex;
     position: fixed;
-    left: -110%;
+    left: -100%;
     top: 2.5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: rgb(73, 73, 73);
     width: 100%;
     /* border-radius: 10px; */
     text-align: center;
@@ -300,7 +312,7 @@ section {
 }
 @media screen and (max-width: 630px) {
   :root {
-    font-size: 10px;
+    font-size: 13px;
   }
   .site-header {
     padding-left: 80px;
@@ -309,21 +321,18 @@ section {
     padding-left: 20px;
     padding: 20px;
   }
-
-  /* .nav-menu {
-    top: 2.8rem;
-  } */
 }
 @media screen and (max-width: 360px) {
+  :root {
+    font-size: 10px;
+  }
   .nav-menu {
-    display: flex;
     position: fixed;
     left: -111%;
     top: 2.5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: rgb(73, 73, 73);
     width: 100%;
-    /* border-radius: 10px; */
     text-align: center;
     transition: 0.3s;
   }
