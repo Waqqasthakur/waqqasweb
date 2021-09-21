@@ -14,7 +14,7 @@ a {
 
 /* Nav bar */
 .header {
-  /* position: fixed; */
+  position: fixed;
   /* border-bottom: 1px solid #e2e8f0; */
   background-color: rgb(73, 73, 73);
   font-family: "Roboto", sans-serif;
