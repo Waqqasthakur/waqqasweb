@@ -16,6 +16,7 @@ a {
 .header {
   border-bottom: 1px solid #e2e8f0;
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 .navbar {
@@ -75,7 +76,7 @@ a {
   flex-direction: column;
   padding-top: 150px;
   padding-left: 150px;
-  width: 70%;
+  /* width: 70%; */
 }
 .project-page {
   background-color: rgb(235, 235, 235);
@@ -268,22 +269,20 @@ section {
     padding-left: 100px;
   }
   .nav-menu {
+    display: flex;
     position: fixed;
-    left: -100%;
+    left: -110%;
     top: 2.5rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-  .navbar {
-    padding: 0.4rem 1.4rem;
-  }
+
   .nav-menu.active {
-    left: 0;
+    left: -5%;
   }
 
   .nav-item {
@@ -302,10 +301,8 @@ section {
   .site-header {
     padding-left: 80px;
   }
-  .navbar {
-    padding: 0.4rem 1.4rem;
-  }
-  .nav-menu {
+
+  /* .nav-menu {
     top: 2.8rem;
-  }
+  } */
 }
